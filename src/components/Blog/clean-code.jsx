@@ -1,18 +1,14 @@
-import Header from '../components/Header/Header';
-import entradasBlog from '../components/Blog/entradas.json';
-import { Link } from 'react-router-dom';
-import './blog.css'
+import Header from '../Header/Header';
+import entradasBlog from './entradas.json';
 
-export const Blog = () => {
+export const Entrada1 = () => {
   const renderEntrada = (entrada) => (
     <li key={entrada.id}>
-      <Link to={`/blog/${entrada.id}`}>
         <img
           className='aspect-[389/500] h-full object-cover w-full max-w-full rounded'
           src={entrada.img}
           alt="Portada"
         />
-      </Link>
     </li>
   );
 

@@ -1,0 +1,13 @@
+main {
+    margin: 0;
+}
+
+ul {
+    display: grid;
+    grid-column: 3;
+    gap: 3;
+}
+
+li {
+    list-style: none;
+}
