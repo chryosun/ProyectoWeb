@@ -1,0 +1,79 @@
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    background-color: #fff;
+    color: #333;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    animation:  enhance-header linear both;
+
+    animation-timeline: scroll(root);
+    animation-range: 0 200px; /* entre mas pequeño sea el numero mas rapido sera la animacion */
+
+    z-index: 1;
+}
+
+header img {
+    margin: 0;
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Estilos para submenús */
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    opacity: 0;
+    background-color: #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+nav ul li:hover > ul {
+
+    flex-direction: column;
+    opacity: 1;
+}
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul ul li a {
+    padding: 10px 15px;
+}
+
+@keyframes enhance-header {
+    to {
+        height: 50px;
+    }
+  }

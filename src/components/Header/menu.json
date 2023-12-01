@@ -1,0 +1,57 @@
+[
+    {
+      "id": "menu1",
+      "label": "Inicio",
+      "link": "/"
+    },
+    {
+      "id": "menu2",
+      "label": "Acerca de Nosotros",
+      "link": "/acerca-de-nosotros",
+      "submenus": [
+        {
+          "id": "menu2-submenu1",
+          "label": "Nuestros Programas",
+          "link": "/nuestros-programas"
+        },
+        {
+          "id": "menu2-submenu2",
+          "label": "¿Cómo Ayudar?",
+          "link": "/como-ayudar"
+        }
+      ]
+    },
+    {
+      "id": "menu5",
+      "label": "Galería",
+      "link": "/galería"
+    },
+    {
+      "id": "menu6",
+      "label": "Blog",
+      "link": "/blog"
+    },
+    {
+      "id": "menu7",
+      "label": "Eventos",
+      "link": "/eventos"
+    },
+    {
+      "id": "menu8",
+      "label": "Contáctenos",
+      "link": "/contactenos",
+      "submenus": [
+        {
+          "id": "menu8-submenu1",
+          "label": "Donaciones",
+          "link": "/donaciones"
+        },
+        {
+          "id": "menu8-submenu2",
+          "label": "Preguntas Frecuentes (FAQ)",
+          "link": "/faq"
+        }
+      ]
+    }
+  ]
+  
