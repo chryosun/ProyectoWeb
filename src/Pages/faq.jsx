@@ -1,6 +1,5 @@
 import Header from "../components/Header/Header";
 import './faq.css';
-import preguntas from "./preguntas.json";
 
 export const FAQ = () => {
   const handleClick = (event) => {
@@ -10,27 +9,32 @@ export const FAQ = () => {
     }
   };
 
-  const renderPreguntas = (pregunta) => (
-    <div key={pregunta.id} className="faq">
+  return (
+    <>
+      <Header />
+      <section className="faqs" onClick={handleClick}>
+        <div className="faq">
           <div className="question">
-            <h3>{pregunta.pregunta}</h3>
+            <h3>Como puedo ayudarlos con su trabajo?</h3>
             <svg width="15" height="10" viewBox="0 0 42 25">
               <path d="M3 3L21 21L39 3" strokeWidth="7" strokeLinecap="round" />
             </svg>
           </div>
           <div className="answer">
-            <p>{pregunta.respuesta}</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-  );
-
-  const preguntasUX = preguntas.map(renderPreguntas);
-
-  return (
-    <>
-      <Header />
-      <section className="faqs" onClick={handleClick}>
-        {preguntasUX}
+        <div className="faq">
+          <div className="question">
+            <h3>What is JavaScript?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" strokeWidth="7" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className="answer">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
       </section>
     </>
   );
