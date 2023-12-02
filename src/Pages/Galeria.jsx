@@ -15,7 +15,7 @@ export const Galeria = () => {
         <>
             <Header />
 
-            <section>
+            <section className="galeria">
                 {fotosUX}
             </section>
         </>
